@@ -10,17 +10,45 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 <style>
-  /* Change the color of the carousel control icons */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #d43076; /* Change to your desired color */
+.card {
+  margin: 5px;
+  border: none;
+  width: 15rem;
+  height: 300px; /* Set a fixed height for all cards */
+  display: flex; /* Use flex to make all cards the same size */
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: space-between; /* Distribute space evenly between child elements */
 }
 
+/* Change the appearance of carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #d43076; /* Background color */
+  color: #fff; /* Icon color */
+  border-radius: 50%; /* Rounded corners */
+  padding: 2px; /* Adjust spacing within the icon box */
+  font-size: 10px; /* Icon size */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+ .icon-box {
+        width: 220px; /* Set the desired width */
+        height: 300px; /* Set the desired height */
+        padding: 20px; /* Add padding to create space between the boxes */
+      }
+.no-underline {
+  text-decoration: none;
+}
 /* Increase the distance between the carousel control icons */
 .carousel-control-prev,
 .carousel-control-next {
-  padding: 100px; /* Adjust the padding to increase or decrease the distance */
+  padding: 800px; /* Adjust the padding to increase or decrease the distance */
 }
+
+.project-section-bg {
+  background: linear-gradient(180deg, #f2f6f9 0%, #dee2e6 100%);
+}
+
 
 </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -55,6 +83,7 @@
 </head>
 
 <body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
@@ -158,16 +187,16 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill">HTML <i class="val">90%</i></span>
+              <span class="skill">HTML <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">CSS <i class="val">80%</i></span>
+              <span class="skill">CSS <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -239,19 +268,19 @@
             <div class="resume-item">
               <h4>Master of Computer Application</h4>
               <h5>2021 - 2023</h5>
-              <p><br><em>Center for computer science and information Technology, calicut university campus</em></p>
+              <p><br><em>I have completed my Master's in Computer Application from the Center for Computer Science and Information Technology at Calicut University Campus.</em></p>
 <!--              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>-->
             </div>
             <div class="resume-item">
               <h4>Bachelor of Computer Application</h4>
               <h5>2018 - 2021</h5>
-              <p><br><em>CHMKM Govt. Arts & Science College , Tanur</em></p>
+              <p><br><em>I completed my bachelor's degree in Computer Application from CHMKM Govt. Arts & Science College, Tanur.</em></p>
 <!--              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>-->
             </div>
             <div class="resume-item">
               <h4>Plus two Computer Science</h4>
               <h5>2017 - 2018</h5>
-              <p><br><em>SNMHSS Parappanangadi</em></p>
+              <p><br><em>I completed my higher secondary education in Computer Science from SNMHSS Parappanangadi.</em></p>
 <!--              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>-->
             </div>
           </div>
@@ -290,98 +319,113 @@
     </section><!-- End Resume Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+    <section id="services" class="services project-section-bg">
       <div class="container">
 
 
         <div class="section-title">
           <h2>Project</h2>
-<!--          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
         </div>
 
-        <div class="row mx-auto text-center carousel slide"  id="carouselExampleIndicators"  data-bs-ride="carousel">
-          &nbsp;
-<!--           &nbsp;<div class="carousel-inner row">-->
-<!--           &nbsp;<center>-->
-<!--           &nbsp;<div class="carousel-indicators">-->
-<!--          <br>-->
-<!--             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" style="background-color: #d43076;" aria-current="true" aria-label="Slide 1"></button>-->
-<!--             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" style="background-color: #d43076;" aria-label="Slide 2"></button>-->
-<!--             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  style="background-color: #d43076;" aria-label="Slide 3"></button>-->
-<!--            </div>-->
-<!--          &nbsp;</center>-->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-md-4">
+        <div class="row mx-auto text-center carousel slide carousel-color"  id="carouselExampleIndicators"  data-bs-ride="carousel">
+
+            <center>
+                <div class="carousel-inner row">
+               <div class="carousel-item active">
+                   <div class="container-sm d-flex">
+                     <div class="col-md-4">
+
+                        <div class="">
+                             <!--  <div class="card-body">-->
+                                      <!--          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">-->
+                                   <div class="icon-box">
+                                           <div class="icon"><i class="fas fa-vote-yea"></i></div>
+                                                <h4 class="title"><a href="" class="no-underline">ELECTION ASSISTANCE THROUGH FACE RECOGNITION</a></h4>
+                                                    <p class="description">Introduce  a secure voting in polling booth by using  face recognition</p>
+                                   </div>
+                               </div>
+<!--  </div>-->
+                        </div>
+                     <div class="col-md-4">
+
+                        <div class="">
+<!--  <div class="card-body">-->
+
 <!--          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">-->
-             <div class="icon-box">
-              <div class="icon"><i class="fas fa-vote-yea"></i></div>
-              <h4 class="title"><a href="">ELECTION ASSISTANCE THROUGH FACE RECOGNITION</a></h4>
-              <p class="description">Introduce  a secure voting in polling booth by using  face recognition</p>
-             </div>
-          </div>
+                                <div class="icon-box ">
+                                    <div class="icon"><i class="bx bx-file"></i></div>
+                                       <h4 class="title"><a href="" class="no-underline">INTERNAL MARK ASSESSMENT SYSTEM
+                                      </a></h4>
+                                      <p class="description">Teachers calculate and upload students marks which can be accessed with valid login credentials</p>
+                                </div>
+                            </div>
+<!--  </div>-->
+                       </div>
+                     <div class="col-md-4">
 
-            <div class="col-md-4">
-
-<!--          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">-->
-            <div class="icon-box ">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">INTERNAL MARK ASSESSMENT SYSTEM
-              </a></h4>
-              <p class="description">Teachers calculate and upload students marks which can be accessed with valid login credentials</p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
+                       <div class="">
+<!--  <div class="card-body">-->
 
 <!--          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">-->
             <div class="icon-box">
               <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">CRAFT AND GIFT</a></h4>
-              <p class="description">Craftsman upload their handy craft items in the website and customer generate an order. The craftsman deliver the product to the customer.</p>
+              <h4 class="title"><a href="" class="no-underline">CRAFT AND GIFT</a></h4>
+              <p class="description"><br>Craftsman upload their handy craft items in the website and customer generate an order.</p>
             </div>
           </div>
-        </div>
-      </div>
+<!--  </div>-->
+</div>
+</div>
+    </div>
+    <div class="carousel-item">
+      <div class="container-sm d-flex">
+                                       <div class="col-md-4">
 
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-4">
+      <div class="">
+<!--  <div class="card-body">-->
 
 <!--          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">-->
             <div class="icon-box ">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">INTERNAL MARK ASSESSMENT SYSTEM
+              <h4 class="title"><a href="" class="no-underline">INTERNAL MARK ASSESSMENT SYSTEM
               </a></h4>
               <p class="description">Teachers calculate and upload students marks which can be accessed with valid login credentials</p>
             </div>
           </div>
+<!--  </div>-->
+</div>
+                                       <div class="col-md-4">
+<div class="">
+<!--  <div class="card-body">-->
+<!--          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">-->
+             <div class="icon-box">
+              <div class="icon"><i class="fas fa-vote-yea"></i></div>
+              <h4 class="title"><a href="" class="no-underline">ELECTION ASSISTANCE THROUGH FACE RECOGNITION</a></h4>
+              <p class="description">Introduce  a secure voting in polling booth by using  face recognition</p>
+             </div>
+           </div>
+<!--  </div>-->
+        </div>
+                                       <div class="col-md-4">
 
-          <div class="col-md-4">
+        <div class="">
+<!--  <div class="card-body">-->
 
 <!--          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">-->
             <div class="icon-box">
               <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">CRAFT AND GIFT</a></h4>
-              <p class="description">Craftsman upload their handy craft items in the website and customer generate an order. The craftsman deliver the product to the customer.</p>
+              <h4 class="title"><a href="" class="no-underline">CRAFT AND  GIFTS</a></h4>
+              <p class="description"><br> Craftsman upload their handy craft items in the website and customer generate an order. </p>
             </div>
           </div>
-            <div class="col-md-4">
-<!--          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">-->
-             <div class="icon-box">
-              <div class="icon"><i class="fas fa-vote-yea"></i></div>
-              <h4 class="title"><a href="">ELECTION ASSISTANCE THROUGH FACE RECOGNITION</a></h4>
-              <p class="description">Introduce  a secure voting in polling booth by using  face recognition</p>
-             </div>
-           </div>
-           </div>
+<!--  </div>-->
+</div>
+    </div>
+    </div>
+  </div>
+            </center>
 
-
-        </div>
-      </div>
-
-                   &nbsp;<div class="carousel-inner row">
+        <div class="carousel-inner row">
            &nbsp;<center>
            &nbsp;<div class="carousel-indicators">
           <br>
@@ -392,15 +436,123 @@
           &nbsp;</center>
 
 </div>
-           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
-    </button>
-   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
-   </button>
-        </div>
+  </button>
+</div>
+
+
+
+
+
+
+
+<!--           &nbsp;<div class="carousel-inner row">-->
+<!--           &nbsp;<center>-->
+<!--           &nbsp;<div class="carousel-indicators">-->
+<!--          <br>-->
+<!--             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" style="background-color: #d43076;" aria-current="true" aria-label="Slide 1"></button>-->
+<!--             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" style="background-color: #d43076;" aria-label="Slide 2"></button>-->
+<!--             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  style="background-color: #d43076;" aria-label="Slide 3"></button>-->
+<!--            </div>-->
+<!--          &nbsp;</center>-->
+<!--      <div class="carousel-inner">-->
+<!--        <div class="carousel-item active">-->
+<!--          <div class="row">-->
+<!--            <div class="col-md-4">-->
+<!--&lt;!&ndash;          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">&ndash;&gt;-->
+<!--             <div class="icon-box">-->
+<!--              <div class="icon"><i class="fas fa-vote-yea"></i></div>-->
+<!--              <h4 class="title"><a href="">ELECTION ASSISTANCE THROUGH FACE RECOGNITION</a></h4>-->
+<!--              <p class="description">Introduce  a secure voting in polling booth by using  face recognition</p>-->
+<!--             </div>-->
+<!--          </div>-->
+
+<!--            <div class="col-md-4">-->
+
+<!--&lt;!&ndash;          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">&ndash;&gt;-->
+<!--            <div class="icon-box ">-->
+<!--              <div class="icon"><i class="bx bx-file"></i></div>-->
+<!--              <h4 class="title"><a href="">INTERNAL MARK ASSESSMENT SYSTEM-->
+<!--              </a></h4>-->
+<!--              <p class="description">Teachers calculate and upload students marks which can be accessed with valid login credentials</p>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-md-4">-->
+
+<!--&lt;!&ndash;          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">&ndash;&gt;-->
+<!--            <div class="icon-box">-->
+<!--              <div class="icon"><i class="bx bx-gift"></i></div>-->
+<!--              <h4 class="title"><a href="">CRAFT AND GIFT</a></h4>-->
+<!--              <p class="description">Craftsman upload their handy craft items in the website and customer generate an order. The craftsman deliver the product to the customer.</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--        <div class="carousel-item">-->
+<!--          <div class="row">-->
+<!--            <div class="col-md-4">-->
+
+<!--&lt;!&ndash;          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">&ndash;&gt;-->
+<!--            <div class="icon-box ">-->
+<!--              <div class="icon"><i class="bx bx-file"></i></div>-->
+<!--              <h4 class="title"><a href="">INTERNAL MARK ASSESSMENT SYSTEM-->
+<!--              </a></h4>-->
+<!--              <p class="description">Teachers calculate and upload students marks which can be accessed with valid login credentials</p>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-md-4">-->
+
+<!--&lt;!&ndash;          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">&ndash;&gt;-->
+<!--            <div class="icon-box">-->
+<!--              <div class="icon"><i class="bx bx-gift"></i></div>-->
+<!--              <h4 class="title"><a href="">CRAFT AND GIFT</a></h4>-->
+<!--              <p class="description">Craftsman upload their handy craft items in the website and customer generate an order. The craftsman deliver the product to the customer.</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--            <div class="col-md-4">-->
+<!--&lt;!&ndash;          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">&ndash;&gt;-->
+<!--             <div class="icon-box">-->
+<!--              <div class="icon"><i class="fas fa-vote-yea"></i></div>-->
+<!--              <h4 class="title"><a href="">ELECTION ASSISTANCE THROUGH FACE RECOGNITION</a></h4>-->
+<!--              <p class="description">Introduce  a secure voting in polling booth by using  face recognition</p>-->
+<!--             </div>-->
+<!--           </div>-->
+<!--           </div>-->
+
+
+<!--        </div>-->
+<!--      </div>-->
+
+<!--                   &nbsp;<div class="carousel-inner row">-->
+<!--           &nbsp;<center>-->
+<!--           &nbsp;<div class="carousel-indicators">-->
+<!--          <br>-->
+<!--             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" style="background-color: #d43076;" aria-current="true" aria-label="Slide 1"></button>-->
+<!--             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" style="background-color: #d43076;" aria-label="Slide 2"></button>-->
+<!--&lt;!&ndash;             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"  style="background-color: #d43076;" aria-label="Slide 3"></button>&ndash;&gt;-->
+<!--            </div>-->
+<!--          &nbsp;</center>-->
+
+<!--</div>-->
+<!--           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">-->
+<!--    <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--    <span class="visually-hidden">Previous</span>-->
+<!--    </button>-->
+<!--   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">-->
+<!--    <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--    <span class="visually-hidden">Next</span>-->
+<!--   </button>-->
+<!--        </div>-->
       </div>
     </section><!-- End Services Section -->
 
@@ -750,6 +902,7 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </body>
 

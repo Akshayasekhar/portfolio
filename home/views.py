@@ -12,6 +12,8 @@ def index(request):
     return render(request, 'index.html')
 
 
+
+
 def contact_view(request):
     if request.method == 'POST':
         name = request.POST.get('name')
